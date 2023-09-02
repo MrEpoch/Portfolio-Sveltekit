@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { theme } from 'lib/store';
     import '../app.css';
 	import Footer from './footer.svelte';
 	import Header from './header.svelte';
     
-    $: dark = true;
+    $: dark = $theme === "dark";
+
 </script>
 
 <div class:dark>
