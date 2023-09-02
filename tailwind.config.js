@@ -9,7 +9,9 @@ export default {
         },
         colors: {
             'main': {
-                DEFAULT: '#2DA8D8'
+                light: "#3DF8D8",
+                DEFAULT: '#2DA8D8',
+                dark: '#3DA8D8',
             }
         }
       },
