@@ -8,6 +8,11 @@
 
 </script>
 
+<svelte:head>
+    <title>Portfolio</title>
+    <meta name="color-scheme" content={dark ? 'dark' : 'light'} />
+</svelte:head>
+
 <div class:dark>
     <Header />
     <slot />

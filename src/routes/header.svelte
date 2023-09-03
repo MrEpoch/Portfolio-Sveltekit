@@ -11,7 +11,7 @@
 </script>
 
 
-<nav class="dark:bg-black/90 dark:text-white/90">
+<nav class="dark:bg-black/10 dark:text-white/90">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center">
         <div class="h-16 mr-3 w-16">
