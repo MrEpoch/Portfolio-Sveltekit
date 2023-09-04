@@ -1,0 +1,15 @@
+<script lang="ts">
+    export let project_data: any;
+</script>
+
+
+<a href={`/projects/${project_data.id}`} class="
+    max-w-[400px] h-full bg-white border border-gray-200 rounded-lg 
+    shadow dark:bg-gray-800 dark:border-gray-700 w-full hover:brightness-50 duration-500 transition-all">
+    <img class="rounded-t-lg w-full" width="400" src={project_data.img} alt={project_data.name} />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-anton tracking-wide text-gray-900 dark:text-white">
+            {project_data.name}
+        </h5>
+    </div>
+</a>

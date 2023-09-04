@@ -106,9 +106,10 @@
         </div>
         <img src={Me} class="w-fit z-0 shadow sm:h-[40rem] overflow-hidden rounded-b-[2rem] mt-[10rem]" alt="Alexandr Stenčuk" />        
     </section>
-
     {#if message.length > 0}
-        <p class="fixed right-3 bottom-5 rounded-xl px-6 py-4 bg-main text-center text-sm text-white">{message}</p>
+        <p class="fixed right-3 bottom-5 rounded-xl px-6 py-4 font-bold
+            bg-gradient-to-r from-indigo-400 to-cyan-400    
+            text-center text-sm text-white">{message}</p>
     {/if}
 </div>
 

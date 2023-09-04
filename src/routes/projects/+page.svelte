@@ -1,4 +1,15 @@
+<script lang="ts">
+	import ProjectCard from "./project-card.svelte";
+    import projects from "./projects";
 
-<div class="min-h-screen dark:bg-black/10 dark:text-white/90">
-    
+</script>
+
+
+<div class="min-h-screen dark:bg-black/10 dark:text-white/90"> 
+    <div class="py-8 relative z-[0] px-4 mx-auto max-w-screen-xl 
+        overflow-hidden items-center text-center lg:py-16 flex flex-col gap-[2rem]">
+    {#each projects as project}
+        <ProjectCard project_data={project}/>
+    {/each}
+    </div>
 </div>
