@@ -32,4 +32,4 @@
 <p class="dark:text-gray-100 text-gray-700 text-xl text-center">
     My hobbies are developing new projects, exercising and reading novels.
 </p>
-<img src={Code} class="absolute bottom-1" alt="code thinking" />
+<img src={Code} class="absolute bottom-1 right-5" alt="code thinking" />

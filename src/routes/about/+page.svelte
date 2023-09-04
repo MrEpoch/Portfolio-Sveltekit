@@ -38,8 +38,8 @@
             <StickyLayer offset={{ top: 0.5, bottom: 1.5 }} class="flex justify-end">
             <div class="dark:bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] 
                         dark:from-gray-900 dark:to-gray-600 bg-gradient-to-r 
-                        from-slate-200 to-zinc-200 opacity-80 w-full sm:w-1/2 h-full flex flex-col gap-[2rem]
-                        py-8 px-4 mx-auto max-w-screen-xl rounded-lg
+                        from-slate-200 to-zinc-200 opacity-80 w-full  h-full flex flex-col gap-[2rem]
+                        py-8 px-4 mx-auto md:max-w-[900px] sm:max-w-screen-xl rounded-lg
             ">
                     <AboutMe />
                 </div>
