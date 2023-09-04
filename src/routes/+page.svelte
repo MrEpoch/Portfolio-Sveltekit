@@ -64,13 +64,13 @@
 <div class="min-h-screen relative dark:bg-black/10 dark:text-white/90">
     <Landing {paragraph_text} />
     <div class="relative z-10">
-        <div class="custom-shape-divider-bottom-1693661443 text-gray-200 dark:text-gray-700/30">
+        <div class="custom-shape-divider-bottom-1693661443 text-gray-200/50 dark:text-gray-700/30">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
             </svg>
         </div>
     </div>
-    <section class="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-700/30">
+    <section class="min-h-screen flex flex-col bg-gray-200/50 dark:bg-gray-700/30">
         <div class="w-full mt-[16rem] py-8 px-4 mx-auto max-w-screen-xl overflow-hidden 
             flex flex-wrap gap-[5rem] justify-center"
         >
@@ -78,9 +78,9 @@
                 <a href="/pricing" class="
                             min-h-[200px] max-h-[200px] max-w-[200px] min-w-[200px]
                             sm:min-h-[300px] sm:max-h-[300px] sm:max-w-[300px] sm:min-w-[300px]
-                            rounded-xl transition-all dark:bg-gray-600/20 hover:bg-gradient-to-r from-indigo-400 to-cyan-400
+                            rounded-xl hover:transition-all transition-all dark:bg-gray-600/20 hover:bg-gradient-to-r from-indigo-400 to-cyan-400
                             hover:text-white link-cards-pricing duration-500
-                            bg-gray-200 dark:hover:bg-main cursor-pointer flex shadow
+                            bg-gray-200/60 cursor-pointer flex shadow
                             items-center flex-col sm:p-4 p-2 justify-center gap-1 sm:gap-2
                 ">
                     <SvgContainer number={inx} />
@@ -91,7 +91,7 @@
         </div>
     </section>
     <div class="relative">
-        <div class="custom-shape-divider-top-1693741156 text-gray-200 dark:text-gray-700/30">
+        <div class="custom-shape-divider-top-1693741156 text-gray-200/50 dark:text-gray-700/30">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path fill="currentColor" d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"></path>
             </svg>
