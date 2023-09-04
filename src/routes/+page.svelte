@@ -98,7 +98,7 @@
         </div>
     </div>
     <section class="min-h-screen flex flex-col items-center mt-[143px] py-8 relative z-[0] px-4 mx-auto max-w-screen-xl">
-        <h1 class="text-center text-6xl mt-[7rem] font-extrabold text-gray-900 dark:text-white">Contact Me</h1>
+        <h1 class="text-center text-6xl mt-[7rem] font-bold text-gray-900 dark:text-white">Contact Me</h1>
         <div class="flex w-full flex-wrap gap-[3rem] mt-[8rem] items-center justify-around">
             {#each contact_info as i}
                 <ContactCard {i} {addedToClipBoard} />
