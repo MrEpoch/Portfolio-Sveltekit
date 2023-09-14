@@ -8,7 +8,7 @@
     shadow dark:bg-gray-800 dark:border-gray-700 w-full hover:brightness-50 duration-500 transition-all">
     <img class="rounded-t-lg w-full" width="400" src={project_data.img} alt={project_data.name} />
     <div class="p-5">
-        <h5 class="mb-2 text-2xl font-anton tracking-wide text-gray-900 dark:text-white">
+        <h5 class="mb-2 text-2xl font-anton tracking-wide text-gray-900 dark:text-white/80">
             {project_data.name}
         </h5>
     </div>

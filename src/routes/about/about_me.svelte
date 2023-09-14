@@ -1,12 +1,12 @@
 <script lang="ts">
-    import Code from "assets/code-thinking.svg";
+    import MyPhoto from "assets/MP-no_background.png";
 </script>
 
 
-<h3 class="text-5xl font-bold dark:text-white text-black mt-[4rem]
+<h3 class="text-6xl font-bold dark:text-white text-black gap-2 mt-[4rem]
     flex flex-col items-center text-center">
     Hi, i am Alex
-    <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 text-lg bg-clip-text text-transparent box-decoration-clone">Full stack developer</span>
+    <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 text-xl bg-clip-text text-transparent box-decoration-clone">Full stack developer</span>
 </h3>
 
 <p class="dark:text-gray-100 text-gray-700 text-xl text-center">
@@ -24,12 +24,12 @@
         font-bold bg-clip-text text-transparent box-decoration-clone">Tailwind</a> for efficiency and maintainability of my code.
 </p>
 <p class="dark:text-gray-100 text-gray-700 text-xl text-center">
-    I use <a href="https://neovim.io/" class="bg-gradient-to-r from-indigo-400 to-cyan-400 text-lg
+    I use <a href="https://github.com/MrEpoch/nvim-custom-edit" class="bg-gradient-to-r from-indigo-400 to-cyan-400 text-lg
     font-bold bg-clip-text text-transparent box-decoration-clone">Neovim</a>
     as code editor and document my code with git on <a href="https://github.com/MrEpoch" class="bg-gradient-to-r from-indigo-400 to-cyan-400 text-lg
         font-bold bg-clip-text text-transparent box-decoration-clone">Github</a>.
 </p>
 <p class="dark:text-gray-100 text-gray-700 text-xl text-center">
-    My hobbies are developing new projects, exercising and reading novels.
+    My hobbies are developing new projects, reading novels and exercising.
 </p>
-<img src={Code} class="absolute bottom-1 right-5" alt="code thinking" />
+<img src={MyPhoto} class="max-w-[300px] h-full w-full" alt="code thinking" />

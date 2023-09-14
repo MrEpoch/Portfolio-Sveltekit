@@ -1782,7 +1782,7 @@ svelte-hmr@^0.15.3:
 
 svelte-local-storage-store@^0.6.0:
   version "0.6.0"
-  resolved "https://registry.npmjs.org/svelte-local-storage-store/-/svelte-local-storage-store-0.6.0.tgz"
+  resolved "https://registry.yarnpkg.com/svelte-local-storage-store/-/svelte-local-storage-store-0.6.0.tgz#f49d9c6f0ae1c3e9b84f266a12fefa64a88f1fae"
   integrity sha512-UbCY/yT/YUadU5IX/gZkoRQnA+ebFZHKKQjlJvfWHnBj3CPe9sNn8ndxYz/xy4LUzGjuBLq8+wH5RYK54ba3wA==
 
 svelte-parallax@^0.6.0:

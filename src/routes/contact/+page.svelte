@@ -26,7 +26,7 @@
                 bg-gray-200/60 cursor-pointer flex shadow left-1
                 items-center flex-col sm:p-4 p-2 justify-center gap-[2rem] sm:gap-[3rem]
             ">
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Github</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Github</h2>
                 <GithubIcon class="w-12 h-12" />
             </a>
             <a href="/" class="
@@ -37,7 +37,7 @@
                 bg-gray-200/60 cursor-pointer flex shadow left-1
                 items-center flex-col sm:p-4 p-2 justify-center gap-[2rem] sm:gap-[3rem]
             ">
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Instagram</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold  dark:text-white">Instagram</h2>
                 <InstagramIcon class="w-12 h-12" />
             </a>
             <button on:click={addedToClipBoard} use:clipboard={"dev@stencukpage.com"} class="
@@ -48,7 +48,7 @@
                 bg-gray-200/60 cursor-pointer flex shadow left-1
                 items-center flex-col sm:p-4 p-2 justify-center gap-[2rem] sm:gap-[3rem]
             ">
-                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Email</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold  dark:text-white">Email</h2>
                 <MailIcon class="w-12 h-12" />
             </button>
         </div>
