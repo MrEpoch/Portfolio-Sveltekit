@@ -162,6 +162,16 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.48.0.tgz"
   integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
+"@fontsource/jetbrains-mono@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/jetbrains-mono/-/jetbrains-mono-5.0.12.tgz#02258f2a4a0553e9a527b1f3ac8d7c10838b5bc4"
+  integrity sha512-BO2in8zNXWUn1TJsPWgL2qSMYU2SQKoKOmJ9FRrE9gMFtPhEDKgxc0hUCVmeDUcMFrafFEn+KqZ5a85z8rwMzA==
+
+"@fontsource/manrope@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/manrope/-/manrope-5.0.12.tgz#c5bc1c7877d0ca22302fb148aa820e0b9183062f"
+  integrity sha512-KGPNJBWV+f8Q/AEGL3EtIBid70fldEZtz3CJ3rBimYBk/JU1EkIvxTN//gHwTlwJehh2lDTlIMO3lBOlu9WtDQ==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.11"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.11.tgz"
@@ -321,6 +331,11 @@
   version "7.5.1"
   resolved "https://registry.npmjs.org/@types/semver/-/semver-7.5.1.tgz"
   integrity sha512-cJRQXpObxfNKkFAZbJl2yjWtJCqELQIdShsogr1d2MilP8dKD9TE/nEKHkJgUNHdGKCQaf9HbIynuV2csLGVLg==
+
+"@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.8.tgz#bb197b9639aa1a04cf464a617fe800cccd92ad5c"
+  integrity sha512-d0XxK3YTObnWVp6rZuev3c49+j4Lo8g4L1ZRm9z5L0xpoZycUPshHgczK5gsUMaZOstjVYYi09p5gYvUtfChYw==
 
 "@typescript-eslint/eslint-plugin@^5.45.0":
   version "5.62.0"
@@ -1248,6 +1263,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lucide-svelte@^0.279.0:
+  version "0.279.0"
+  resolved "https://registry.yarnpkg.com/lucide-svelte/-/lucide-svelte-0.279.0.tgz#4ab3f6724b64e8dbb58571cf68b01ca3a4d757a7"
+  integrity sha512-u9j8tMPxWsv5iXJvrUU/jpyML/k49flr7440UE8QM9V3u0OZt5+qaY5TMiPDTVRMdEELBg4d4ueW1+3Mo3VT4A==
+
 magic-string@^0.27.0:
   version "0.27.0"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.27.0.tgz"
@@ -1266,6 +1286,16 @@ mdn-data@2.0.30:
   version "2.0.30"
   resolved "https://registry.npmjs.org/mdn-data/-/mdn-data-2.0.30.tgz"
   integrity sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==
+
+mdsvex@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/mdsvex/-/mdsvex-0.11.0.tgz#d6672406abbf341933d60c9bfebd39ffb893f851"
+  integrity sha512-gJF1s0N2nCmdxcKn8HDn0LKrN8poStqAicp6bBcsKFd/zkUBGLP5e7vnxu+g0pjBbDFOscUyI1mtHz+YK2TCDw==
+  dependencies:
+    "@types/unist" "^2.0.3"
+    prism-svelte "^0.4.7"
+    prismjs "^1.17.1"
+    vfile-message "^2.0.4"
 
 merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
@@ -1379,6 +1409,11 @@ once@^1.3.0:
   integrity sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
   dependencies:
     wrappy "1"
+
+open-props@^1.5.15:
+  version "1.5.15"
+  resolved "https://registry.yarnpkg.com/open-props/-/open-props-1.5.15.tgz#8eb095310e9a00ebfe54368eafbc47e3db434f0e"
+  integrity sha512-LwkMUm7xr7C2qt7RE1rEyAt8OTHDE2QSvWM3g2B6OCHkj+wsWhwi5unuiobM/bOWX253WjS1GmMuY36E2v0amQ==
 
 optionator@^0.9.3:
   version "0.9.3"
@@ -1552,6 +1587,16 @@ prettier@^2.8.0:
   version "2.8.8"
   resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.8.tgz"
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
+
+prism-svelte@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/prism-svelte/-/prism-svelte-0.4.7.tgz#fbc6709450b4e2ed660ddb82c3718817fc584cbe"
+  integrity sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==
+
+prismjs@^1.17.1:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 punycode@^2.1.0:
   version "2.3.0"
@@ -1940,6 +1985,13 @@ undici@~5.23.0:
   dependencies:
     busboy "^1.6.0"
 
+unist-util-stringify-position@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-2.0.3.tgz#cce3bfa1cdf85ba7375d1d5b17bdc4cada9bd9da"
+  integrity sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==
+  dependencies:
+    "@types/unist" "^2.0.2"
+
 update-browserslist-db@^1.0.11:
   version "1.0.11"
   resolved "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.11.tgz"
@@ -1959,6 +2011,14 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+vfile-message@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-2.0.4.tgz#5b43b88171d409eae58477d13f23dd41d52c371a"
+  integrity sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-stringify-position "^2.0.0"
 
 vite@^4.4.2:
   version "4.4.9"
