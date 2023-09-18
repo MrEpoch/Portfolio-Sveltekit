@@ -9,6 +9,14 @@
     font-weight: 900;
 }
 
+.blog-body :is(img) {
+    margin-top: 5rem;
+    object-fit: cover;
+    aspect-ratio: 10/7;
+    width: 100%;
+    margin-inline: auto;
+}
+
 .blog-body :is(h2) {
     font-size: 1.75rem;
     font-weight: 700;
@@ -48,9 +56,8 @@
 	padding-inline-start: 1rem;
 }
 
+
 .blog-body pre {
-	max-inline-size: 100%;
-	padding: 1rem;
-	border-radius: 8px;
+    @apply overflow-x-auto my-8 rounded-lg p-4 dark:bg-gray-800 bg-gray-100;
 	tab-size: 2;
 }

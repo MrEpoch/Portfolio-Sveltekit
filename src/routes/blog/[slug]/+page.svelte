@@ -13,7 +13,7 @@
 
 
 <div class="min-h-screen w-full dark:bg-black/10"> 
-<article class="min-h-screen w-full">
+<article class="min-h-screen p-4 w-full">
     <hgroup>
     <h1 class="mb-4 pt-[6rem] text-center 
         textfont-extrabold tracking-tight leading-none 
@@ -22,7 +22,7 @@
         lg:text-xl dark:text-gray-400">Published At {formatDate(data.meta.date)}</p>
     </hgroup>
 
-    <div class="tags mt-[2rem]">
+    <div class="tags mt-[2rem] flex sm:justify-unset justify-center flex-wrap">
         {#each data.meta.categories as category}
             <a href={`/blog?tag=${category.toLowerCase()}`} class="rounded-full py-3 
         font-bold px-6 bg-gray-200 dark:bg-gray-700">#{category}</a>

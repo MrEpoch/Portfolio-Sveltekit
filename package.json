@@ -39,6 +39,7 @@
 		"mdsvex": "^0.11.0",
 		"open-props": "^1.5.15",
 		"postcss": "^8.4.29",
+		"shiki": "^0.14.4",
 		"svelte-feather-icons": "^4.0.1",
 		"svelte-local-storage-store": "^0.6.0",
 		"svelte-parallax": "^0.6.0",
