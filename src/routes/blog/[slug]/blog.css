@@ -11,10 +11,6 @@
 
 .blog-body :is(img) {
     margin-top: 5rem;
-    object-fit: cover;
-    aspect-ratio: 10/7;
-    width: 100%;
-    margin-inline: auto;
 }
 
 .blog-body :is(h2) {
