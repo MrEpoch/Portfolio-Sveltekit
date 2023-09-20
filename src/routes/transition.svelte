@@ -1,12 +1,12 @@
 
 <script lang="ts">
-    import { fade } from "svelte/transition";
+    import { scale } from "svelte/transition";
 
     export let url: string;
 </script>
 
 {#key url}
-    <div class="h-full" in:fade>
+    <div class="h-full" in:scale>
         <slot />
     </div>
 {/key}

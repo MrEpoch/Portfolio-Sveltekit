@@ -1,5 +1,6 @@
-import TomatoDream from 'assets/tomatodream.png';
-import VelvetLine from 'assets/velvet-line.png';
+import TomatoDream from 'assets/tomatodream.webp';
+import VelvetLine from 'assets/velvet-line.webp';
+import Lyfier from 'assets/Lyfier.webp';
 
 // require("crypto").randomBytes(16).toString("hex");
 
@@ -28,6 +29,16 @@ const projects = [
         cached database with redis, for database i used for this time supabase and for storing images
         supabase storage, admin can create new projects through admin producted pages instead of modal which i used
         on Tomato Dream website`
+    },
+    {
+		id: '59b06467d1ca17ac69d3d8f7e9a3e59d',
+		name: 'Lyfier',
+		link: 'https://company-information-v5d7.vercel.app/',
+		img: Lyfier,
+		technologies: 'Next.js, React, Tailwind, Vercel, Sanity',
+		created: '2023',
+        description: `Website which could be used for company centered around ecology, i used sanity for blogs and accomplished
+        tasks, it showcases my skills in using Next.js and React itself.`
 	}
 ];
 
