@@ -3,7 +3,7 @@
 </script>
 
 <h3
-	class="text-6xl font-bold dark:text-white text-black gap-2 mt-[4rem]
+	class="md:text-6xl sm:text-4xl text-3xl font-bold dark:text-white text-black gap-2 mt-[4rem]
     flex flex-col items-center text-center"
 >
 	Hi, i am Alex

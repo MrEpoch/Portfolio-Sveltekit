@@ -83,7 +83,7 @@
 		>
 			{#each svg_content as i, inx}
 				<a
-					href="/pricing"
+					href="/projects"
 					class="
                             min-h-[200px] max-h-[200px] max-w-[200px] min-w-[200px]
                             sm:min-h-[300px] sm:max-h-[300px] sm:max-w-[300px] sm:min-w-[300px]
@@ -126,11 +126,6 @@
 				<ContactCard {i} {addedToClipBoard} />
 			{/each}
 		</div>
-		<img
-			src={Me}
-			class="w-fit z-0 shadow sm:h-[40rem] overflow-hidden rounded-b-[2rem] mt-[10rem]"
-			alt="Alexandr Stenčuk"
-		/>
 	</section>
 	{#if message.length > 0}
 		<p
