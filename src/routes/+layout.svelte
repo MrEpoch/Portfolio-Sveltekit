@@ -3,7 +3,7 @@
 	import '../app.css';
 	import Footer from './footer.svelte';
 	import Header from './header.svelte';
-	import Transition from './transition.svelte';
+	import Transition from 'components/transition.svelte';
 
 	$: dark = $theme === 'dark';
     export let data;

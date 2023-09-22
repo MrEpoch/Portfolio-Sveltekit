@@ -1845,6 +1845,11 @@ svelte-hmr@^0.15.3:
   resolved "https://registry.npmjs.org/svelte-hmr/-/svelte-hmr-0.15.3.tgz"
   integrity sha512-41snaPswvSf8TJUhlkoJBekRrABDXDMdpNpT2tfHIv4JuhgvHqLMhEPGtaQn0BmbNSTkuz2Ed20DF2eHw0SmBQ==
 
+svelte-inview@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-inview/-/svelte-inview-4.0.1.tgz#27899a2a6fd16c24732ffa9bb4fd712cc8fadabc"
+  integrity sha512-8NuT/DKFiZAccDw1Z16cIsdZ7K6/BGxrUfDaFaWTCEdn3YqMj1TUAkfmQ08FQ1+INl1G+TQS+ImXIBiiISgXog==
+
 svelte-local-storage-store@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/svelte-local-storage-store/-/svelte-local-storage-store-0.6.0.tgz#f49d9c6f0ae1c3e9b84f266a12fefa64a88f1fae"

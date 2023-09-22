@@ -10,12 +10,11 @@
 </script>
 
 <nav class="dark:bg-black/10 dark:text-white/90">
-	<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+	<div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
 		<a href="/" class="flex items-center">
 			<div class="h-16 mr-3 w-16">
-				<img src={Logo} class="h-full w-full" alt="Alexandr Stenčuk Logo" />
+                <img src={Logo} class="h-full w-full" alt="Alexandr Stenčuk Logo" />
 			</div>
-			<span class="self-center text-4xl font-thin whitespace-nowrap dark:text-white">Stenčuk</span>
 		</a>
 		<button
 			on:click={() => (hidden = !hidden)}
@@ -47,6 +46,13 @@
             rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white
             md:dark:bg-transparent dark:border-gray-700 dark:bg-black/90"
 			>
+				<li>
+					<a
+						href="/"
+						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+						>Home</a
+					>
+				</li>
 				<li>
 					<a
 						href="/about"
