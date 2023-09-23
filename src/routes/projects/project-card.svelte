@@ -7,7 +7,7 @@
 	href={`/projects/${project_data.id}`}
 	class="
     max-w-[400px] h-full dark:border-0 border border-gray-200 rounded
-    shadow bg-gray-800 hover:scale-[1.02] dark:border-gray-700 w-full hover:brightness-50 duration-500 transition-all"
+    shadow dark:bg-gray-800 hover:scale-[1.02] dark:border-gray-700 w-full hover:brightness-50 duration-500 transition-all"
 >
 	<img class="w-full rounded" width="400" src={project_data.img} alt={project_data.name} />
 	<div class="p-5">
