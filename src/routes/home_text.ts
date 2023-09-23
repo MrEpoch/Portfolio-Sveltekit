@@ -36,10 +36,4 @@ export const contact_info = [
         isLink: true,
         content: 'https://github.com/MrEpoch/'
     },
-    {
-        type: 'instagram',
-        svg: Feather.icons.instagram.toSvg(),
-        isLink: true,
-        content: 'instagram'
-    }
 ];
