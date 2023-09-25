@@ -63,7 +63,7 @@
 	>.
 	My hobbies outside of programming is reading novels ,mostly fantasy, and lifting weights in the gym.
 </p>
-<img src={MyPhoto} class="max-w-[300px] h-full w-full" alt="code thinking" />
+<img src={MyPhoto} class="sm:rounded-b-[0px] rounded-b-xl max-w-[300px] h-full w-full" alt="code thinking" />
 
 <style>
     p {

@@ -12,16 +12,16 @@
 	}
 </script>
 
-<div class="min-h-screen dark:bg-black/10 dark:text-white/90">
+<div class="min-h-screen py-[6rem] dark:bg-black/10 dark:text-white/90">
 	<h1
-		class="mb-4 pt-[6rem] text-center textfont-extrabold tracking-tight leading-none text-gray-900 md:text-5xl text-4xl lg:text-6xl dark:text-white"
+		class="mb-4 text-center textfont-extrabold tracking-tight leading-none text-gray-900 md:text-5xl text-4xl lg:text-6xl dark:text-white"
 	>
 		<span
 			class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent box-decoration-clone"
 			>Contact</span
 		> Me
 	</h1>
-	<div class="mx-auto max-w-screen-xl mt-[11rem] justify-center flex flex-wrap gap-[3rem] py-4">
+	<div class="mx-auto max-w-screen-xl mt-[6rem] justify-center flex flex-wrap gap-[3rem] py-4">
 		<a
 			href="https://github.com/MrEpoch/"
 			class="
@@ -34,7 +34,7 @@
             "
 		>
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Github</h2>
-			<GithubIcon class="w-12 h-12" />
+			<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 		</a>
 		<a
 			href="/"
@@ -48,7 +48,7 @@
             "
 		>
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Instagram</h2>
-			<InstagramIcon class="w-12 h-12" />
+			<InstagramIcon class="sm:w-12 h-8 w-8 sm:h-12" />
 		</a>
 		<button
 			on:click={addedToClipBoard}
@@ -63,7 +63,7 @@
             "
 		>
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Email</h2>
-			<MailIcon class="w-12 h-12" />
+			<MailIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 		</button>
 	</div>
 	{#if message.length > 0}

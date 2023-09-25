@@ -8,7 +8,7 @@
 
 
 <section
-		class="min-h-screen flex flex-col items-center pt-[10rem] py-8 relative z-[0] px-4 mx-auto max-w-screen-xl"
+		class="min-h-screen flex flex-col items-center py-[10rem] relative z-[0] px-4 mx-auto max-w-screen-xl"
 	>
 		<h1 class="text-center sm:text-6xl text-4xl mt-[7rem] font-bold text-gray-900 dark:text-white">
 			Contact Me

@@ -6,7 +6,7 @@
 	let isAnimating = true;
 </script>
 
-<div class="min-h-screen w-full flex flex-col dark:bg-black/10 dark:text-white/90">
+<div class="min-h-screen pb-[7rem] w-full flex flex-col dark:bg-black/10 dark:text-white/90">
 	<div
 		class="min-h-screen w-full py-8 px-4 mx-auto max-w-screen-xl gap-[8rem] flex flex-col items-center"
 	>
