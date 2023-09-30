@@ -5,10 +5,10 @@
 </script>
 
 <div
-	class="py-8 relative z-[0] px-4 mx-auto max-w-screen-xl overflow-hidden items-center text-center lg:py-16 flex flex-col gap-[2rem]"
+	class="pt-[8rem] md:pt-[15rem] relative z-[0] px-4 mx-auto max-w-screen-xl overflow-hidden items-center text-center flex flex-col gap-[2rem]"
 >
 	<h1
-		class="mb-4 mt-[12rem] textfont-extrabold tracking-tight leading-none text-gray-900
+		class="mb-4 textfont-extrabold tracking-tight leading-none text-gray-900
         md:text-5xl text-3xl lg:text-6xl dark:text-white"
 	>
 		Your

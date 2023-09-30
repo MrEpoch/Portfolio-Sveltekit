@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Logo from 'assets/logo.png';
 	import { theme } from 'lib/store';
+    import { fly } from 'svelte/transition';
 
 	let hidden = true;
 
@@ -40,50 +41,55 @@
 				/>
 			</svg>
 		</button>
-		<div class={`${hidden ? 'hidden' : ''} w-full md:block md:w-auto`} id="navbar-default">
+		<div class={`${hidden ? 'hidden' : 'transition opacity-1'} w-full md:block md:w-auto`} id="navbar-default">
 			<ul
 				class="font-medium flex sm:items-center flex-col p-4 md:p-0 mt-4 border border-gray-100
             rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white
             md:dark:bg-transparent dark:border-gray-700 dark:bg-black/90"
 			>
 				<li>
-					<a
+                    <a
+                        on:click={() => hidden = true}
 						href="/"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>Home</a
 					>
 				</li>
 				<li>
-					<a
+                    <a
+                        on:click={() => hidden = true}
 						href="/about"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>About</a
 					>
 				</li>
 				<li>
-					<a
+                    <a
+                        on:click={() => hidden = true}
 						href="/projects"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>Projects</a
 					>
 				</li>
 				<li>
-					<a
+                    <a
+                        on:click={() => hidden = true}
 						href="/blog"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>Blog</a
 					>
 				</li>
 				<li>
-					<a
+                    <a
+                        on:click={() => hidden = true}
 						href="/contact"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>Contact</a
 					>
 				</li>
 				<li>
-					<button
-						on:click={SwitchTheme}
+                    <button
+                        on:click={() => { SwitchTheme(); hidden = true }}
 						class="flex items-center justify-center w-full text-start
                     py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
                     md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
