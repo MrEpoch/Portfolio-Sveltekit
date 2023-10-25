@@ -3,6 +3,7 @@
     import { paragraph_text, svg_content } from "./home_text";
 	import Contact from 'components/home/contact.svelte';
 	import Info from 'components/home/info.svelte';
+	import AboutBottom from 'components/home/AboutBottom.svelte';
 
 	$: message = '';
 
@@ -47,7 +48,8 @@
 				/>
 			</svg>
     </div>
-    <Contact {addedToClipBoard} />
+
+    <AboutBottom />
 	</div>
 		{#if message.length > 0}
 		<p
