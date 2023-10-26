@@ -1,5 +1,5 @@
 <script lang="ts">
-	import About from 'assets/about-page.svg';
+	import About from 'assets/CodeAbout.svg';
 	import { lazyLoad } from '$lib';
 	import AboutMe from './about_me.svelte';
 
@@ -12,7 +12,7 @@
 	>
 		<h1
 			class="mb-4 mt-[6rem] textfont-extrabold tracking-tight leading-none text-gray-900
-            md:text-5xl text-4xl lg:text-6xl dark:text-white"
+            text-5xl max-[390px]:text-4xl lg:text-6xl dark:text-white"
 		>
 			About
 			<span
@@ -29,8 +29,8 @@
 			<img
 				on:load={() => (isAnimating = false)}
 				use:lazyLoad={About}
-				class="w-full opacity-0 object-cover
-            h-full mr-[4rem]"
+				class="w-full opacity-0 pt-12 object-cover
+            h-full"
 				alt="signalizing about page"
 			/>
 		</div>
