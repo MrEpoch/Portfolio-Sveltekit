@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	export let project_data: any;
 </script>
 
@@ -7,7 +6,7 @@
 	href={`/projects/${project_data.id}`}
 	class="
     max-w-[400px] h-full dark:border-0 border border-gray-200 rounded
-    shadow dark:bg-gray-900 hover:scale-[1.02] dark:border-gray-700 w-full hover:brightness-50 
+    shadow dark:bg-gray-900 hover:scale-[1.02] dark:border-gray-700 w-full hover:brightness-50
     duration-500 transition-all"
 >
 	<img class="w-full rounded" width="400" src={project_data.img} alt={project_data.name} />

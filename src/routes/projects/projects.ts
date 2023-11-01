@@ -30,27 +30,27 @@ const projects = [
         cached database with redis, for database i used for this time supabase and for storing images
         supabase storage, admin can create new projects through admin producted pages instead of modal which i used
         on Tomato Dream website`
-    },
-    {
+	},
+	{
 		id: '59b06467d1ca17ac69d3d8f7e9a3e59d',
 		name: 'Lyfier',
 		link: 'https://company-information-v5d7.vercel.app/',
 		img: Lyfier,
 		technologies: 'Next.js, React, Tailwind, Vercel, Sanity, Typescript',
 		created: '2023',
-        description: `Website which could be used for company centered around ecology, i used sanity for blogs and accomplished
+		description: `Website which could be used for company centered around ecology, i used sanity for blogs and accomplished
         tasks, it showcases my skills in using Next.js and React itself.`
-    },
-    {
-        id: 'b6f8c3e8c5a9a0a9a9a9a9a9a9a9a9a9',
-        name: "Echoes Of Literature",
-        link: "https://book-store-pygzhy0z7-mrepoch.vercel.app/",
-        img: EchoesOfLiterature,
-        technologies: "Next.js React, Tailwind, Vercel, Prisma, Stripe Api, Supabase, Typescript",
-        created: "2023",
-        description: `Book store website, full stack project, auth handled through supabase, payment with stripe, database
+	},
+	{
+		id: 'b6f8c3e8c5a9a0a9a9a9a9a9a9a9a9a9',
+		name: 'Echoes Of Literature',
+		link: 'https://book-store-pygzhy0z7-mrepoch.vercel.app/',
+		img: EchoesOfLiterature,
+		technologies: 'Next.js React, Tailwind, Vercel, Prisma, Stripe Api, Supabase, Typescript',
+		created: '2023',
+		description: `Book store website, full stack project, auth handled through supabase, payment with stripe, database
         managed through supabase, built with next.js and tailwind.`
-    }
+	}
 ];
 
 export default projects;

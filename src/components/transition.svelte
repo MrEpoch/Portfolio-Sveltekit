@@ -1,12 +1,11 @@
-
 <script lang="ts">
-    import { scale } from "svelte/transition";
+	import { scale } from 'svelte/transition';
 
-    export let url: string;
+	export let url: string;
 </script>
 
 {#key url}
-    <div class="h-full" in:scale>
-        <slot />
-    </div>
+	<div class="h-full" in:scale>
+		<slot />
+	</div>
 {/key}

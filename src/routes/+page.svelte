@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Landing from 'components/home/landing.svelte';
-    import { paragraph_text, svg_content } from "./home_text";
+	import { paragraph_text, svg_content } from './home_text';
 	import Contact from 'components/home/contact.svelte';
 	import Info from 'components/home/info.svelte';
 	import AboutBottom from 'components/home/AboutBottom.svelte';
@@ -13,8 +13,7 @@
 			message = '';
 		}, 1500);
 	}
-
-	</script>
+</script>
 
 <div class="min-h-screen relative dark:bg-black/10 dark:text-white/90">
 	<Landing {paragraph_text} />
@@ -31,10 +30,10 @@
 					fill="currentColor"
 				/>
 			</svg>
-        </div>
+		</div>
 	</div>
-    <Info {svg_content} />
-    <div class="relative">
+	<Info {svg_content} />
+	<div class="relative">
 		<div class="custom-shape-divider-top-1693741156 text-gray-200/50 dark:text-gray-700/30">
 			<svg
 				data-name="Layer 1"
@@ -47,11 +46,11 @@
 					d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
 				/>
 			</svg>
-    </div>
+		</div>
 
-    <AboutBottom />
+		<AboutBottom />
 	</div>
-		{#if message.length > 0}
+	{#if message.length > 0}
 		<p
 			class="fixed right-3 bottom-5 rounded-xl px-6 py-4 font-bold
             bg-gradient-to-r from-indigo-400 to-cyan-400
@@ -78,7 +77,6 @@
 		width: calc(100% + 1.3px);
 		height: 143px;
 	}
-
 
 	.custom-shape-divider-top-1693741156 {
 		position: absolute;

@@ -3,50 +3,48 @@ title: Welcome To My Portfolio
 description: Some Info about this portfolio.
 date: '2023-9-18'
 categories:
-    - sveltekit
-    - portfolio
-    - me
+  - sveltekit
+  - portfolio
+  - me
 published: true
 ---
 
 <script>
-    import LinkMd from "./link_md.svelte"; 
-    import MyWorkspace from "assets/myworkspace.png";
-    import Img from "./ImageStyled.svelte";
+	import LinkMd from "./link_md.svelte"; import MyWorkspace from "assets/myworkspace.png"; import
+	Img from "./ImageStyled.svelte";
 </script>
-
 
 # Hello, Nice to see you 👋
 
-My name is <LinkMd href="/">Alexandr Stenčuk</LinkMd>, I am a web developer mostly centered around front-end development. 
-I excel in the React library and its meta framework Next.js, my favorite web framework is Sveltekit, 
+My name is <LinkMd href="/">Alexandr Stenčuk</LinkMd>, I am a web developer mostly centered around front-end development.
+I excel in the React library and its meta framework Next.js, my favorite web framework is Sveltekit,
 which I use for most of my projects.
 
-Before I already made a few portfolios, but one way or another they were awful, 
-so I decided to make the final version of it. That’s it, 
-this portfolio is built with SvelteKit and is simply awesome. It took me a few days to make it, 
+Before I already made a few portfolios, but one way or another they were awful,
+so I decided to make the final version of it. That’s it,
+this portfolio is built with SvelteKit and is simply awesome. It took me a few days to make it,
 I had an idea about using svelte parallax, but it was not it.
 
-I think parallax is a very unique design on websites, but it breaks very often and has the problem of being 
-badly responsive on small devices. Responsive design is one of the main themes of current web building which 
-is a must to have on a website. Most users always come from phones or similarly 
+I think parallax is a very unique design on websites, but it breaks very often and has the problem of being
+badly responsive on small devices. Responsive design is one of the main themes of current web building which
+is a must to have on a website. Most users always come from phones or similarly
 smaller devices which makes it harder to scale to their sizes for me as a developer.
 
 <Img src={MyWorkspace} />
 
-Styling was done through Tailwindcss which is for me most important technology for this project. When 
+Styling was done through Tailwindcss which is for me most important technology for this project. When
 I will later return a few months later, I will not have to see class names that look like foreign languages.
 I had a few projects that I could not upgrade cause learning what each class means, would take me a tremendous amount of time.
 
 It contains a service worker for caching the website on the client side, which is pretty cool.
-Performance is one of the main points why I use SvelteKit, but one thing I 
-do that brings the whole performance down is loading images, I usually add loading 
-    animation when an image is not totally loaded to prevent it from suddenly jumping in.
+Performance is one of the main points why I use SvelteKit, but one thing I
+do that brings the whole performance down is loading images, I usually add loading
+animation when an image is not totally loaded to prevent it from suddenly jumping in.
 
-I used typescript, but I use it mainly for type-checking fatal errors, many times I find it pretty 
-annoying even though many stand with it. Now many popular projects and developers are ditching 
+I used typescript, but I use it mainly for type-checking fatal errors, many times I find it pretty
+annoying even though many stand with it. Now many popular projects and developers are ditching
 typescript due to various reasons.
 
-Code for my portfolio i wrote in Neovim, which for me best code/text editor I 
-could wish for. Many things I need to do in fact need a terminal to use, which is pretty easy 
+Code for my portfolio i wrote in Neovim, which for me best code/text editor I
+could wish for. Many things I need to do in fact need a terminal to use, which is pretty easy
 to use with Neovim. However, I use tmux and lspsage to make it very easy to use the terminal through keybindings.

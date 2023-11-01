@@ -2,6 +2,7 @@
 	import About from 'assets/CodeAbout.svg';
 	import { lazyLoad } from '$lib';
 	import AboutMe from './about_me.svelte';
+	import AboutTimeline from './AboutTimeline.svelte';
 
 	let isAnimating = true;
 </script>
@@ -38,6 +39,7 @@
 	<div
 		class="min-h-screen w-full py-8 px-4 mx-auto max-w-screen-xl gap-[5rem] flex flex-col items-center"
 	>
+    <AboutTimeline />
 		<AboutMe />
 	</div>
 </div>

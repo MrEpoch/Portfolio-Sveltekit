@@ -6,21 +6,21 @@ import shiki from 'shiki';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.mdx'],
-}
+	extensions: ['.mdx']
+};
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-    // for more information about preprocessors
-    extensions: ['.svelte', '.mdx'],
-    highlight: {
-        highlighter: async (code, lang = "text") => {
-            const highlighter = await shiki.getHighlighter({ theme: "poimandres" });
-            const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
-            return `{@html \`${html}\` }`
-        }
-    },
+	// for more information about preprocessors
+	extensions: ['.svelte', '.mdx'],
+	highlight: {
+		highlighter: async (code, lang = 'text') => {
+			const highlighter = await shiki.getHighlighter({ theme: 'poimandres' });
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
+			return `{@html \`${html}\` }`;
+		}
+	},
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
 	kit: {
