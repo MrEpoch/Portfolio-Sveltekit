@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib';
+	import { theme } from 'lib/store';
 	export let data: any;
 
-	let project = data.project;
+  let project = data.project;
+  let loaded = $theme;
 </script>
 
 <div class="min-h-screen dark:bg-black/10 dark:text-white/90">
@@ -11,15 +13,23 @@
 			href={project.link}
 			class="w-full dark:bg-gray-800 bg-gray-200 rounded-3xl
             min-h-[200px] sm:min-h-[500px] flex justify-center object-cover h-full"
-		>
+    >
+      {#if $theme === loaded}
 			<img
-				use:lazyLoad={project.img}
+				use:lazyLoad={$theme === "dark" ? project.img.dark : project.img.light}
 				class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
 				alt={project.name}
-			/>
+        />
+      {:else}
+        <img
+          use:lazyLoad={$theme === "dark" ? project.img.dark : project.img.light}
+				  class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
+				  alt={project.name}
+          />
+      {/if}
 		</a>
 		<a href={project.link}>
-			<h2 class="mt-4 text-2xl sm:text-4xl tracking-wide font-anton text-gray-900 dark:text-white">
+			<h2 class="mt-4 text-2xl sm:text-4xl tracking-wide hover:underline font-anton text-gray-900 dark:text-white">
 				{project.name}
 			</h2>
 		</a>
