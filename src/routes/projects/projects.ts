@@ -2,7 +2,9 @@ import TomatoDream from 'assets/tomatodream.png';
 import VelvetLine from 'assets/velvetLine.png';
 import Lyfier from 'assets/lyfier.png';
 import EchoesOfLiterature from 'assets/echoes.png';
+import InfinityImg from "assets/infinity.png";
 
+import InfinityDark from "assets/infinity-dark.png";
 import TomatoDreamDark from "assets/tomatodream-darkmode.png";
 import VelvetLineDark from "assets/velvetLine-darkmode.png";
 import LyfierDark from "assets/lyfier-darkmode.png";
@@ -67,6 +69,18 @@ const projects = [
 		created: '2023',
 		description: `Book store website, full stack project, auth handled through supabase, payment with stripe, database
         managed through supabase, built with next.js and tailwind.`
+  },
+  {
+		id: '0b8c730a270f2f01503018cbe6c24212',
+		name: 'Echoes Of Literature',
+    link: 'https://infinitysights.vercel.app/',
+    img: {
+      light: InfinityImg,
+      dark: InfinityDark
+    },
+		technologies: 'Sveltekit, Tailwind, Vercel, Typescript',
+		created: '2023',
+		description: `Practice site created with sveltekit, it looks pretty cool`
 	}
 ];
 
