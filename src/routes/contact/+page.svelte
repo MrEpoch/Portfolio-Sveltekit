@@ -1,6 +1,10 @@
 <script>
 	import { clipboard } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';
 	import { GithubIcon, InstagramIcon, MailIcon } from 'svelte-feather-icons';
+	import { backOut } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
+  import { headerLink } from "lib/store";
 
 	let message = '';
 
@@ -10,6 +14,12 @@
 			message = '';
 		}, 1500);
 	}
+
+  let animate = false;
+  onMount(() => {
+    animate = true;
+    $headerLink = "contact";
+  })
 </script>
 
 <div class="min-h-screen py-[6rem] dark:bg-black/10 dark:text-white/90">
@@ -22,7 +32,9 @@
 		> Me
 	</h1>
 	<div class="mx-auto max-w-screen-xl mt-[6rem] justify-center flex flex-wrap gap-[3rem] py-4">
-		<a
+    {#if animate}
+    <a
+      in:fly|global={{ y: 100, duration: 300, easing: backOut }}
 			href="https://github.com/MrEpoch/"
 			class="
                 min-h-[200px] max-h-[200px] max-w-[200px] min-w-[200px]
@@ -36,7 +48,8 @@
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Github</h2>
 			<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 		</a>
-		<a
+    <a
+      in:fly|global={{ y: 100, duration: 300 * 2, easing: backOut }}
 			href="/"
 			class="
                 min-h-[200px] max-h-[200px] max-w-[200px] min-w-[200px]
@@ -50,7 +63,8 @@
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Instagram</h2>
 			<InstagramIcon class="sm:w-12 h-8 w-8 sm:h-12" />
 		</a>
-		<button
+    <button
+      in:fly|global={{ y: 100, duration: 300 * 3, easing: backOut }}
 			on:click={addedToClipBoard}
 			use:clipboard={'dev@stencukpage.com'}
 			class="
@@ -65,6 +79,7 @@
 			<h2 class="text-2xl sm:text-3xl font-bold dark:text-white">Email</h2>
 			<MailIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 		</button>
+    {/if}
 	</div>
 	{#if message.length > 0}
 		<p

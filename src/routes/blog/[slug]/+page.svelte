@@ -1,8 +1,15 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import { onMount } from 'svelte';
 	import './blog.css';
+	import { headerLink } from 'lib/store';
 
 	export let data;
+
+  onMount(() => {
+    $headerLink = "blog"
+  })
+
 </script>
 
 <svelte:head>

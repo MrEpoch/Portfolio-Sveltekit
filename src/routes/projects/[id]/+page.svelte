@@ -1,7 +1,14 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib';
 	import { theme } from 'lib/store';
-	export let data: any;
+  import { headerLink } from "lib/store";
+	import { onMount } from 'svelte';
+
+  onMount(() => {
+    $headerLink = "projects";
+  });
+
+  export let data: any;
 
   let project = data.project;
   let loaded = $theme;

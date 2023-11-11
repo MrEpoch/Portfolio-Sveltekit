@@ -3,6 +3,12 @@
 	import { lazyLoad } from '$lib';
 	import AboutMe from './about_me.svelte';
 	import AboutTimeline from './AboutTimeline.svelte';
+	import { onMount } from 'svelte';
+	import { headerLink } from 'lib/store';
+
+  onMount(() => {
+    $headerLink = "about";
+  });
 
 	let isAnimating = true;
 </script>
