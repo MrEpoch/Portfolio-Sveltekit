@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { scale, fly } from 'svelte/transition';
+  import { blur } from 'svelte/transition';
 
 	$: shown = {
 		first: false,
@@ -66,8 +66,8 @@
 			</h2>
 			{#if shown.first}
 				<div
-					in:fly={{ y: 50 }}
-					out:fly={{ y: 50 }}
+					in:blur
+					out:blur
 					id="accordion-collapse-body-1"
 					aria-labelledby="accordion-collapse-heading-1"
 				>
@@ -109,8 +109,8 @@
 			</h2>
 			{#if shown.second}
 				<div
-					in:fly={{ y: 50 }}
-					out:fly={{ y: 50 }}
+					in:blur
+					out:blur
 					id="accordion-collapse-body-2"
 					aria-labelledby="accordion-collapse-heading-2"
 				>
@@ -153,8 +153,8 @@
 			</h2>
 			{#if shown.third}
 				<div
-					in:fly={{ y: 50 }}
-					out:fly={{ y: 50 }}
+					in:blur
+					out:blur
 					id="accordion-collapse-body-3"
 					aria-labelledby="accordion-collapse-heading-3"
 				>

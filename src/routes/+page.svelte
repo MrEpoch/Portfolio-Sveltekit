@@ -1,18 +1,8 @@
 <script lang="ts">
 	import Landing from 'components/home/landing.svelte';
 	import { paragraph_text, svg_content } from './home_text';
-	import Contact from 'components/home/contact.svelte';
 	import Info from 'components/home/info.svelte';
 	import AboutBottom from 'components/home/AboutBottom.svelte';
-
-	$: message = '';
-
-	function addedToClipBoard() {
-		message = 'Copied to clipboard';
-		setTimeout(() => {
-			message = '';
-		}, 1500);
-	}
 </script>
 
 <div class="min-h-screen relative dark:bg-black/10 dark:text-white/90">
@@ -50,15 +40,6 @@
 
 		<AboutBottom />
 	</div>
-	{#if message.length > 0}
-		<p
-			class="fixed right-3 bottom-5 rounded-xl px-6 py-4 font-bold
-            bg-gradient-to-r from-indigo-400 to-cyan-400
-            text-center text-sm text-white"
-		>
-			{message}
-		</p>
-	{/if}
 </div>
 
 <style lang="postcss">

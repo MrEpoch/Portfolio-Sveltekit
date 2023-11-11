@@ -72,7 +72,7 @@ const projects = [
   },
   {
 		id: '0b8c730a270f2f01503018cbe6c24212',
-		name: 'Echoes Of Literature',
+		name: 'InfinitySights VR',
     link: 'https://infinitysights.vercel.app/',
     img: {
       light: InfinityImg,
