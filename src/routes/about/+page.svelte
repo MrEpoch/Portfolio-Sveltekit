@@ -1,21 +1,18 @@
 <script lang="ts">
 	import About from 'assets/AboutProjects.png';
-	import { lazyLoad } from '$lib';
-	import AboutMe from './about_me.svelte';
-	import AboutTimeline from './AboutTimeline.svelte';
-	import { onMount } from 'svelte';
-    import { headerLink } from 'lib/store';
-    import { cubicIn } from 'svelte/easing';
-    import { fade, fly } from 'svelte/transition';
+	import AboutMe from 'components/AboutMe.svelte';
+	import AboutTimeline from 'components/AboutTimeline.svelte';
+  import { onMount } from 'svelte';
+  import { headerLink } from 'lib/store';
+  import { cubicIn } from 'svelte/easing';
+  import { fly } from 'svelte/transition';
 
   onMount(() => {
     $headerLink = "about";
     animateImage = true;
   });
 
-	let isAnimating = true;
-
-    let animateImage = false;
+  let animateImage = false;
 </script>
 
 <div class="min-h-screen pb-[7rem] w-full flex flex-col dark:bg-black/10 dark:text-white/90">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Landing from 'components/home/landing.svelte';
-	import { paragraph_text, svg_content } from './home_text';
+	import { paragraph_text, svg_content } from 'lib/texts/home_text';
 	import Info from 'components/home/info.svelte';
 	import AboutBottom from 'components/home/AboutBottom.svelte';
 	import { onMount } from 'svelte';

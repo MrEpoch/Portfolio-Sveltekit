@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
+export async function load({ params }: { params: { slug: string } }) {
 	try {
 		const post = await import(`../../../posts/${params.slug}.mdx`);
 

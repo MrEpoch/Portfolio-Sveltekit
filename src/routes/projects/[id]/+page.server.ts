@@ -1,5 +1,5 @@
 import { redirect } from '@sveltejs/kit';
-import projects from '../projects';
+import projects from 'lib/texts/projects_content';
 
 export const prerender = false;
 

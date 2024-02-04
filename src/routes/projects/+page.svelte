@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import ProjectCard from './project-card.svelte';
-	import projects from './projects';
+	import ProjectCard from 'components/projects/project-card.svelte';
+	import projects from 'lib/texts/projects_content';
   import { headerLink } from "lib/store";
 
   let animating = false;
