@@ -2,11 +2,16 @@ import {defineConfig} from 'vitest/config'
 import {svelte} from '@sveltejs/vite-plugin-svelte'
 import path from "path";
 
+
 export default defineConfig(({mode}) => ({
   plugins: [svelte()],
   test: {
     environment: 'jsdom',
+    globals: true,
     setupFiles: ['./vitest-setup.js'],
+    deps: {
+      inline: ["@sveltejs/kit"]
+    }
   },
   resolve: {
     conditions: mode === 'test' ? ['browser'] : [],
@@ -16,7 +21,7 @@ export default defineConfig(({mode}) => ({
       'assets': path.resolve(__dirname, './src/assets'),
       'types': path.resolve(__dirname, './src/types'),
       'images': path.resolve(__dirname, './src/images'),
-      '$app': path.resolve(__dirname, './.svelte-kit/tsconfig.json'),
+      // '$app': path.resolve(__dirname, './node_modules/@sveltejs/kit/src/runtime/app'),
     }
   }
 }))
