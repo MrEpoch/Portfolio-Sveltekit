@@ -31,7 +31,7 @@
 	</div>
 	<Info {svg_content} />
 	<div class="relative">
-		<div class="custom-shape-divider-top-1693741156 text-gray-200/50 dark:text-gray-700/30">
+		<div class="custom-shape-divider-top-1693741156 text-gray-200/50 dark:text-gray-700/[0.32]">
 			<svg
 				data-name="Layer 1"
 				xmlns="http://www.w3.org/2000/svg"
