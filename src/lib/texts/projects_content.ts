@@ -9,6 +9,7 @@ import TomatoDreamDark from "assets/tomatodream-darkmode.png";
 import VelvetLineDark from "assets/velvetLine-darkmode.png";
 import LyfierDark from "assets/lyfier-darkmode.png";
 import EchoesOfLiteratureDark from "assets/echoes-darkmode.png";
+import Lexagos from "assets/lexagos.png";
 
 // require("crypto").randomBytes(16).toString("hex");
 
@@ -81,7 +82,19 @@ const projects = [
 		technologies: 'Sveltekit, Tailwind, Vercel, Typescript',
 		created: '2023',
 		description: `Practice site created with sveltekit, it looks pretty cool`
-	}
+  },
+  {
+    id: 'e29ac0f6c9b13de4ebb29d743aa8b2b3',
+    name: 'Lexagos',
+    link: 'https://lexagos.vercel.app/',
+    img: {
+      light: Lexagos,
+      dark: Lexagos
+    },
+    technologies: 'NextJS, Docker, Tailwind, Vercel, Typescript, Prisma, Redis, Postgres, Heroku(DB hosting)',
+    created: '2024',
+    description: `School project, course site, i tried in depth to use nextjs, it has basic features like login/signup, course add/update/delete, redis ip blocking and docker compose for running project with db in local env`
+  }
 ];
 
 export default projects;
