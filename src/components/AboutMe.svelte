@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MyPhoto from 'assets/MP-no_background.png';
+	import Coffe from 'assets/coffe.svg';
 </script>
 
 <h3
@@ -64,9 +64,9 @@
 	gym.
 </p>
 <img
-	src={MyPhoto}
-	class="sm:rounded-b-[0px] rounded-b-xl max-w-[300px] h-full w-full"
-	alt="code thinking"
+	src={Coffe}
+	class="sm:rounded-b-[0px] rounded-b-xl max-w-[200px] h-full w-full"
+	alt="Cup of coffee"
 />
 
 <style>
