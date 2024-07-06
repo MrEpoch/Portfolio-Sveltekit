@@ -51,7 +51,7 @@
 			>
 				<li>
 					<a
-            class:currentHeader={$headerLink === "home"}
+						class:currentHeader={$headerLink === 'home'}
 						on:click={() => (hidden = true)}
 						href="/"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -60,7 +60,7 @@
 				</li>
 				<li>
 					<a
-            class:currentHeader={$headerLink === "about"}
+						class:currentHeader={$headerLink === 'about'}
 						on:click={() => (hidden = true)}
 						href="/about"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -69,7 +69,7 @@
 				</li>
 				<li>
 					<a
-            class:currentHeader={$headerLink === "projects"}
+						class:currentHeader={$headerLink === 'projects'}
 						on:click={() => (hidden = true)}
 						href="/projects"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -78,7 +78,7 @@
 				</li>
 				<li>
 					<a
-            class:currentHeader={$headerLink === "blog"}
+						class:currentHeader={$headerLink === 'blog'}
 						on:click={() => (hidden = true)}
 						href="/blog"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -86,8 +86,8 @@
 					>
 				</li>
 				<li>
-          <a
-            class:currentHeader={$headerLink === "contact"}
+					<a
+						class:currentHeader={$headerLink === 'contact'}
 						on:click={() => (hidden = true)}
 						href="/contact"
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -99,7 +99,7 @@
 						on:click={() => {
 							SwitchTheme();
 							hidden = true;
-            }} 
+						}}
 						class="flex items-center justify-center w-full text-start
                     py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
                     md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
@@ -122,7 +122,7 @@
 </nav>
 
 <style lang="postcss">
-  .currentHeader {
-    @apply text-blue-500;
-  }
+	.currentHeader {
+		@apply text-blue-500;
+	}
 </style>

@@ -1,17 +1,17 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib';
 	import { theme } from 'lib/store';
-  import { headerLink } from "lib/store";
+	import { headerLink } from 'lib/store';
 	import { onMount } from 'svelte';
 
-  onMount(() => {
-    $headerLink = "projects";
-  });
+	onMount(() => {
+		$headerLink = 'projects';
+	});
 
-  export let data: any;
+	export let data: any;
 
-  let project = data.project;
-  let loaded = $theme;
+	let project = data.project;
+	let loaded = $theme;
 </script>
 
 <div class="min-h-screen dark:bg-black/10 dark:text-white/90">
@@ -20,23 +20,25 @@
 			href={project.link}
 			class="w-full dark:bg-gray-800 bg-gray-200 rounded-3xl
             min-h-[200px] sm:min-h-[500px] flex justify-center object-cover h-full"
-    >
-      {#if $theme === loaded}
-			<img
-				use:lazyLoad={$theme === "dark" ? project.img.dark : project.img.light}
-				class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
-				alt={project.name}
-        />
-      {:else}
-        <img
-          use:lazyLoad={$theme === "dark" ? project.img.dark : project.img.light}
-				  class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
-				  alt={project.name}
-          />
-      {/if}
+		>
+			{#if $theme === loaded}
+				<img
+					use:lazyLoad={$theme === 'dark' ? project.img.dark : project.img.light}
+					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
+					alt={project.name}
+				/>
+			{:else}
+				<img
+					use:lazyLoad={$theme === 'dark' ? project.img.dark : project.img.light}
+					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
+					alt={project.name}
+				/>
+			{/if}
 		</a>
 		<a href={project.link}>
-			<h2 class="mt-4 text-2xl sm:text-4xl tracking-wide hover:underline font-anton text-gray-900 dark:text-white">
+			<h2
+				class="mt-4 text-2xl sm:text-4xl tracking-wide hover:underline font-anton text-gray-900 dark:text-white"
+			>
 				{project.name}
 			</h2>
 		</a>
@@ -49,6 +51,10 @@
 			<div class="flex gap-2 justify-between">
 				<h3 class="font-bold sm:text-lg text-sm">Created:</h3>
 				<p class="sm:text-lg text-sm">{project.created}</p>
+			</div>
+			<div class="flex gap-2 justify-between">
+				<h3 class="font-bold sm:text-lg text-sm">Github Url:</h3>
+				<a href={project.githubUrl} class="sm:text-lg text-sm hover:underline">{project.name}</a>
 			</div>
 		</div>
 		<div class="w-full">

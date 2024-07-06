@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { blur } from 'svelte/transition';
+	import { blur } from 'svelte/transition';
 
 	$: shown = {
 		first: false,
@@ -9,9 +9,9 @@
 </script>
 
 <section class="min-h-screen w-full">
-  <div class="w-full max-w-screen-xl mx-auto px-4 relative py-64 flex flex-col items-center gap-12">
-    <h3 class="text-4xl font-bold text-gray-900 dark:text-white">QA about me</h3>
-    <svg
+	<div class="w-full max-w-screen-xl mx-auto px-4 relative py-64 flex flex-col items-center gap-12">
+		<h3 class="text-4xl font-bold text-gray-900 dark:text-white">QA about me</h3>
+		<svg
 			viewBox="0 0 24 24"
 			class="dark:text-gray-100 w-32"
 			fill="none"
@@ -21,7 +21,7 @@
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			/><g id="SVGRepo_iconCarrier">
-      <path
+				<path
 					d="M10.125 8.875C10.125 7.83947 10.9645 7 12 7C13.0355 7 13.875 7.83947 13.875 8.875C13.875 9.56245 13.505 10.1635 12.9534 10.4899C12.478 10.7711 12 11.1977 12 11.75V13"
 					stroke="currentColor"
 					stroke-width="1.5"

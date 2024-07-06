@@ -2,17 +2,17 @@
 	import About from 'assets/AboutProjects.png';
 	import AboutMe from 'components/AboutMe.svelte';
 	import AboutTimeline from 'components/AboutTimeline.svelte';
-  import { onMount } from 'svelte';
-  import { headerLink } from 'lib/store';
-  import { cubicIn } from 'svelte/easing';
-  import { fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
+	import { headerLink } from 'lib/store';
+	import { cubicIn } from 'svelte/easing';
+	import { fly } from 'svelte/transition';
 
-  onMount(() => {
-    $headerLink = "about";
-    animateImage = true;
-  });
+	onMount(() => {
+		$headerLink = 'about';
+		animateImage = true;
+	});
 
-  let animateImage = false;
+	let animateImage = false;
 </script>
 
 <div class="min-h-screen pb-[7rem] w-full flex flex-col dark:bg-black/10 dark:text-white/90">
@@ -33,21 +33,21 @@
 			class={`sm:w-1/2 w-full min-h-[200px] sm:min-h-[350px] flex justify-center object-cover
             h-full  `}
 		>
-            {#if animateImage}
-			<img
-                in:fly={{ y: 100, duration: 300, easing: cubicIn }}
-                src={About}
-				class="w-full  pt-12 object-cover
+			{#if animateImage}
+				<img
+					in:fly={{ y: 100, duration: 300, easing: cubicIn }}
+					src={About}
+					class="w-full pt-12 object-cover
              opacity-1 h-full"
-				alt="signalizing about page"
-                />
-            {/if}
+					alt="signalizing about page"
+				/>
+			{/if}
 		</div>
 	</div>
 	<div
 		class="min-h-screen w-full py-8 px-4 mx-auto max-w-screen-xl gap-[5rem] flex flex-col items-center"
 	>
-    <AboutTimeline />
+		<AboutTimeline />
 		<AboutMe />
 	</div>
 </div>

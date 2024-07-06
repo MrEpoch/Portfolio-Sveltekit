@@ -6,10 +6,9 @@
 
 	export let data;
 
-  onMount(() => {
-    $headerLink = "blog"
-  })
-
+	onMount(() => {
+		$headerLink = 'blog';
+	});
 </script>
 
 <svelte:head>

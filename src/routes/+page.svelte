@@ -4,12 +4,11 @@
 	import Info from 'components/home/info.svelte';
 	import AboutBottom from 'components/home/AboutBottom.svelte';
 	import { onMount } from 'svelte';
-  import { headerLink } from "lib/store";
+	import { headerLink } from 'lib/store';
 
-  onMount(() => {
-    $headerLink = "home";
-  });
-
+	onMount(() => {
+		$headerLink = 'home';
+	});
 </script>
 
 <div class="min-h-screen relative dark:bg-black/10 dark:text-white/90">
