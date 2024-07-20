@@ -10,7 +10,7 @@ import Lexagos from 'assets/lexagos.png';
 // require("crypto").randomBytes(16).toString("hex");
 
 const projects = [
-	{
+/*	{
 		id: '1763c8a7c642ac80405a5736de4f5383',
 		name: 'Tomato Dream',
 		link: 'https://www.tomatodream.store',
@@ -27,6 +27,7 @@ const projects = [
         of that reason i had to migrate from email to username auth. That reason and the fact that OAuth doesn't return email addresses,
         but usernames.`
 	},
+  */
 	{
 		id: '59b06467d1ca17ac69d3d8f7e9a3e59d',
 		name: 'Lyfier',
@@ -41,6 +42,7 @@ const projects = [
 		description: `Website which could be used for company centered around ecology, i used sanity for blogs and accomplished
         tasks, it showcases my skills in using Next.js and React itself.`
 	},
+  /*
 	{
 		id: '0b8c730a270f2f01503018cbe6c24212',
 		name: 'InfinitySights VR',
@@ -54,6 +56,7 @@ const projects = [
 		githubUrl: 'https://github.com/MrEpoch/Practice-Project',
 		description: `Practice site created with sveltekit, it looks pretty cool`
 	},
+  */
 	{
 		id: 'e29ac0f6c9b13de4ebb29d743aa8b2b3',
 		name: 'Lexagos',
