@@ -50,7 +50,7 @@
 				</div>
 			{/each}
 		{:else}
-			<div class="lg:pt-[4.5rem] md:pt-[3.75rem] pt-[2.6rem] max-[420px]:pt-[2.2rem]" />
+			<span class="lg:pt-[4.5rem] md:pt-[3.75rem] pt-[2.6rem] max-[420px]:pt-[2.2rem]" />
 		{/if}
 	</h1>
 	<p

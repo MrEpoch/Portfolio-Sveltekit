@@ -37,8 +37,11 @@
 			<ContactSquare info={{ th: 1, link: 'https://github.com/MrEpoch', name: 'Github' }}>
 				<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 			</ContactSquare>
+			<ContactSquare info={{ th: 2, link: 'https://www.instagram.com/alexandrstencuk/', name: 'Instagram' }}>
+				<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
+			</ContactSquare>
 			<button
-				in:fly|global={{ y: 100, duration: 300 * 3, easing: backOut }}
+				in:fly|global={{ y: 100, duration: 300 * 6, easing: backOut }}
 				on:click={addedToClipBoard}
 				use:clipboard={'dev@stencukpage.com'}
 				class="
