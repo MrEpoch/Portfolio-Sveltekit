@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { theme } from 'lib/store';
 	import { lazyLoad } from 'lib';
 	import { backOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
@@ -26,7 +25,7 @@
 		<img
 			class="w-full object-cover h-full opacity-0 rounded group-hover:brightness-75 dark:group-hover:brightness-50 transition duration-300"
 			width="400"
-			use:lazyLoad={$theme === 'dark' ? project_data.img.dark : project_data.img.light}
+			use:lazyLoad={project_data.img.dark}
 			alt={project_data.name}
 		/>
 	</div>

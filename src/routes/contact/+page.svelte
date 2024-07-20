@@ -1,7 +1,7 @@
 <script>
 	import { clipboard } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
-	import { GithubIcon, MailIcon } from 'svelte-feather-icons';
+	import { GithubIcon, MailIcon, InstagramIcon } from 'svelte-feather-icons';
 	import { backOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 	import { headerLink } from 'lib/store';
@@ -38,7 +38,7 @@
 				<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 			</ContactSquare>
 			<ContactSquare info={{ th: 2, link: 'https://www.instagram.com/alexandrstencuk/', name: 'Instagram' }}>
-				<GithubIcon class="sm:w-12 w-8 h-8 sm:h-12" />
+				<InstagramIcon class="sm:w-12 w-8 h-8 sm:h-12" />
 			</ContactSquare>
 			<button
 				in:fly|global={{ y: 100, duration: 300 * 6, easing: backOut }}

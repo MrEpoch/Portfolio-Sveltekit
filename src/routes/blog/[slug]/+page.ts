@@ -9,6 +9,6 @@ export async function load({ params }: { params: { slug: string } }) {
 			meta: post.metadata
 		};
 	} catch (e) {
-		throw error(404, 'Cound not find ${params.slug}');
+		error(404, 'Cound not find ${params.slug}');
 	}
 }

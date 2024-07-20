@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { lazyLoad } from 'lib';
-	import { theme } from 'lib/store';
 	import { headerLink } from 'lib/store';
 	import { onMount } from 'svelte';
 
@@ -11,7 +10,6 @@
 	export let data: any;
 
 	let project = data.project;
-	let loaded = $theme;
 </script>
 
 <div class="min-h-screen dark:bg-black/10 dark:text-white/90">
@@ -21,19 +19,11 @@
 			class="w-full dark:bg-gray-800 bg-gray-200 rounded-3xl
             min-h-[200px] sm:min-h-[500px] flex justify-center object-cover h-full"
 		>
-			{#if $theme === loaded}
 				<img
-					use:lazyLoad={$theme === 'dark' ? project.img.dark : project.img.light}
+					use:lazyLoad={project.img.dark}
 					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
 					alt={project.name}
 				/>
-			{:else}
-				<img
-					use:lazyLoad={$theme === 'dark' ? project.img.dark : project.img.light}
-					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
-					alt={project.name}
-				/>
-			{/if}
 		</a>
 		<a href={project.link}>
 			<h2

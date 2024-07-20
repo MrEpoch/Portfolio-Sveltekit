@@ -1,12 +1,9 @@
 <script lang="ts">
 	import Logo from 'assets/logo.png';
-	import { theme, headerLink } from 'lib/store';
+	import { headerLink } from 'lib/store';
 
 	let hidden = true;
 
-	function SwitchTheme() {
-		theme.set($theme === 'dark' ? 'light' : 'dark');
-	}
 </script>
 
 <nav class="dark:bg-black/10 dark:text-white/90">
@@ -91,28 +88,6 @@
 						class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
 						>Contact</a
 					>
-				</li>
-				<li>
-					<button
-						on:click={() => {
-							SwitchTheme();
-							hidden = true;
-						}}
-						class="flex items-center justify-center w-full text-start
-                    py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-                    md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
-                    dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-					>
-						<svg
-							class="w-8 dark:text-white text-black"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 24 24"
-							><title>brightness-4</title><path
-								fill="currentColor"
-								d="M12,18C11.11,18 10.26,17.8 9.5,17.45C11.56,16.5 13,14.42 13,12C13,9.58 11.56,7.5 9.5,6.55C10.26,6.2 11.11,6 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z"
-							/></svg
-						>
-					</button>
 				</li>
 			</ul>
 		</div>
