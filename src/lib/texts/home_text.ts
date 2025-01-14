@@ -1,8 +1,6 @@
-import Feather from 'feather-icons';
 
 export const paragraph_text = `
-        Experienced in Next.js, SvelteKit, Express.js, and TailwindCSS. Crafting diverse projects, 
-        from static sites to dynamic apps with auth, APIs, Stripe, and storage.
+Developer with experience in website creation, with technologies like nextjs, sveltekit, tailwindcss, animations and more. All with intent of creating high quality websites.
     `;
 
 export const svg_content = [
@@ -26,13 +24,11 @@ export const svg_content = [
 export const contact_info = [
 	{
 		type: 'email',
-		svg: Feather.icons.mail.toSvg(),
 		isLink: false,
 		content: 'dev@stencukpage.com'
 	},
 	{
 		type: 'github',
-		svg: Feather.icons.github.toSvg(),
 		isLink: true,
 		content: 'https://github.com/MrEpoch/'
 	}

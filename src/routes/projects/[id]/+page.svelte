@@ -12,15 +12,15 @@
 	let project = data.project;
 </script>
 
-<div class="min-h-screen dark:bg-black/10 dark:text-white/90">
-	<div class="p-4 mx-auto max-w-screen-xl h-full w-full flex flex-col gap-[2rem]">
+<div class="max-w-container w-full py-16 text-white">
+	<div class="h-full w-full flex flex-col gap-[2rem]">
 		<a
 			href={project.link}
 			class="w-full dark:bg-gray-800 bg-gray-200 rounded-3xl
             min-h-[200px] sm:min-h-[500px] flex justify-center object-cover h-full"
 		>
 				<img
-					use:lazyLoad={project.img.dark}
+					use:lazyLoad={project.img}
 					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
 					alt={project.name}
 				/>
@@ -32,7 +32,7 @@
 				{project.name}
 			</h2>
 		</a>
-		<span class="long-line bg-gradient-to-r from-indigo-400 to-cyan-400 h-1 w-full" />
+		<hr class="long-line bg-gradient-to-r from-main-200 to-main-300 h-1 w-full" />
 		<div class="w-full">
 			<div class="flex gap-2 justify-between">
 				<h3 class="font-bold sm:text-lg text-sm">Technologies:</h3>

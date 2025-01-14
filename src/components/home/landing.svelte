@@ -27,7 +27,7 @@
 </script>
 
 <div
-	class="pt-[8rem] md:pt-[15rem] relative z-[0] px-4 mx-auto max-w-screen-xl overflow-hidden items-center text-center flex flex-col gap-[2rem]"
+	class="max-w-container py-16 pt-48 justify-center overflow-hidden items-center text-center flex flex-col gap-[2rem]"
 >
 	<h1
 		class="lines mb-4 textfont-extrabold tracking-tight leading-none text-gray-900
@@ -39,7 +39,7 @@
 					{#if t.color}
 						<span
 							in:fly|global={{ y: 100, delay: 300 * i, easing: backOut }}
-							class="line bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent box-decoration-clone"
+							class="line bg-gradient-to-r from-main-100 to-main-300 bg-clip-text text-transparent box-decoration-clone"
 							>&nbsp;{t.content}</span
 						>
 					{:else}
@@ -63,9 +63,9 @@
 	>
 		<a
 			href="/projects"
-			class="inline-flex justify-center items-center py-3 px-5 text-base font-medium
-                                  text-center text-white rounded-lg hover:bg-sky-600 focus:ring-4
-                                  focus:ring-blue-300 dark:focus:ring-blue-900 bg-gradient-to-r from-indigo-500 to-cyan-500"
+			class="inline-flex border-4 border-main-background-200 transition hover:border-black justify-center items-center py-3 px-5 text-base font-medium
+                                  text-center text-main-text-200 rounded-lg  focus:ring-4
+                                  bg-gradient-to-r from-main-300 to-main-200"
 		>
 			See Projects
 			<svg
@@ -83,12 +83,6 @@
 					d="M1 5h12m0 0L9 1m4 4L9 9"
 				/>
 			</svg>
-		</a>
-		<a
-			href="/about"
-			class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-		>
-			About Me
 		</a>
 	</div>
 </div>

@@ -2,6 +2,13 @@
 	export let i: any;
 	export let addedToClipBoard: any;
 	import { clipboard } from '@skeletonlabs/skeleton';
+  import { Mail, Github } from 'lucide-svelte';
+
+  const icons = {
+    "mail": Mail,
+    "github": Github
+  }
+
 </script>
 
 {#if !i.isLink}
@@ -14,7 +21,7 @@
 		use:clipboard={i.content}
 		on:click={addedToClipBoard}
 	>
-		{@html i.svg}
+    <svelte:component this={icons[i.type]} />
 		<span>{i.type}</span>
 	</button>
 {:else}
@@ -26,7 +33,7 @@
                 ease-in-out dark:bg-gray-600/20
                 font-bold text-xl items-center justify-center py-8 w-full max-w-[250px] flex gap-4"
 	>
-		{@html i.svg}
+    <svelte:component this={icons[i.type]} />
 		<span>{i.type}</span>
 	</a>
 {/if}

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Landing from 'components/home/landing.svelte';
+  import AboutMe from "./AboutMe.svelte";
 	import { paragraph_text, svg_content } from 'lib/texts/home_text';
 	import Info from 'components/home/info.svelte';
-	import AboutBottom from 'components/home/AboutBottom.svelte';
 	import { onMount } from 'svelte';
 	import { headerLink } from 'lib/store';
 
@@ -11,10 +11,10 @@
 	});
 </script>
 
-<div class="min-h-screen relative dark:bg-black/10 dark:text-white/90">
+<div class="relative"> 
 	<Landing {paragraph_text} />
 	<div class="relative z-10">
-		<div class="custom-shape-divider-bottom-1693661443 text-gray-200/50 dark:text-gray-700/30">
+		<div class="custom-shape-divider-bottom text-main-background-100">
 			<svg
 				data-name="Layer 1"
 				xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +29,8 @@
 		</div>
 	</div>
 	<Info {svg_content} />
-	<div class="relative">
-		<div class="custom-shape-divider-top-1693741156 text-gray-200/50 dark:text-gray-700/[0.32]">
+	<div class="relative h-48">
+		<div class="custom-shape-divider-top text-main-background-100">
 			<svg
 				data-name="Layer 1"
 				xmlns="http://www.w3.org/2000/svg"
@@ -43,13 +43,12 @@
 				/>
 			</svg>
 		</div>
-
-		<AboutBottom />
 	</div>
+  <AboutMe />
 </div>
 
 <style lang="postcss">
-	.custom-shape-divider-bottom-1693661443 {
+	.custom-shape-divider-bottom {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -58,14 +57,14 @@
 		line-height: 0;
 	}
 
-	.custom-shape-divider-bottom-1693661443 svg {
+	.custom-shape-divider-bottom svg {
 		position: relative;
 		display: block;
 		width: calc(100% + 1.3px);
 		height: 143px;
 	}
 
-	.custom-shape-divider-top-1693741156 {
+	.custom-shape-divider-top {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -74,7 +73,7 @@
 		line-height: 0;
 	}
 
-	.custom-shape-divider-top-1693741156 svg {
+	.custom-shape-divider-top svg {
 		position: relative;
 		display: block;
 		width: calc(100% + 1.3px);
