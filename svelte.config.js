@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-import { mdsvex, escapeSvelte } from 'mdsvex';
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -27,11 +27,16 @@ const config = {
 			types: './src/types',
 			images: './src/images'
 		},
-		csp: {
+    csp: {
+      mode: 'auto',
 			directives: {
 				'default-src': ['self'],
 				'script-src': ['self'],
-				'style-src': ['self', 'unsafe-inline', 'kit.svelte.dev']
+				'style-src': ['self', 'unsafe-inline']
+			},
+      reportOnly: {
+				'script-src': ['self'],
+				'report-uri': ['/']
 			}
 		}
 	}
