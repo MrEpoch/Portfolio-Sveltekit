@@ -1,16 +1,13 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	import { inview } from 'svelte-inview';
+  import viewport from './useViewportAction.js';
 
-	let isInView: any;
+	let isInView: boolean;
 </script>
 
 <div
 	class="wrapper"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '-20%' }}
-	on:change={({ detail }) => {
-		isInView = detail.inView;
-	}}
+  use:viewport on:enterViewport={() => (isInView = true)}
 >
 	{#if isInView}
 		<div in:fade class="box">
