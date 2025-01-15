@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Landing from 'components/home/landing.svelte';
-  import AboutMe from "./AboutMe.svelte";
+	import AboutMe from './AboutMe.svelte';
 	import { paragraph_text, svg_content } from 'lib/texts/home_text';
 	import Info from 'components/home/info.svelte';
 	import { onMount } from 'svelte';
@@ -11,7 +11,7 @@
 	});
 </script>
 
-<div class="relative"> 
+<div class="relative">
 	<Landing {paragraph_text} />
 	<div class="relative z-10">
 		<div class="custom-shape-divider-bottom text-main-background-100">
@@ -44,7 +44,7 @@
 			</svg>
 		</div>
 	</div>
-  <AboutMe />
+	<AboutMe />
 </div>
 
 <style lang="postcss">

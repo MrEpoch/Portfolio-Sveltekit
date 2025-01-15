@@ -12,20 +12,18 @@
 	});
 </script>
 
-<div class="max-w-container w-full py-24 dark:bg-main-background-200 text-white">
+<div class="max-w-container w-full py-24 text-white dark:bg-main-background-200">
 	<h1
-		class="mb-4 text-center sm:p-6 py-10 font-bold tracking-tight leading-none text-5xl max-[390px]:text-4xl lg:text-6xl dark:text-white"
+		class="mb-4 py-10 text-center text-5xl font-bold leading-none tracking-tight dark:text-white max-[390px]:text-4xl sm:p-6 lg:text-6xl"
 	>
 		My projects
 	</h1>
-  <hr class="m-4 h-0.5 bg-main-200" />
-  <p class="w-full text-center">
-    Collection of some of my projects that I've worked on.
-  </p>
+	<hr class="m-4 h-0.5 bg-main-200" />
+	<p class="w-full text-center">Collection of some of my projects that I've worked on.</p>
 	<div
-		class="relative py-16 z-[0] gap-8 w-full flex flex-col
-        overflow-hidden items-center justify-center justify-items-center text-center sm:grid grid-cols-1 gap-x-6 gap-y-4 sm:gap-y-6
-        sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-2"
+		class="relative z-[0] flex w-full grid-cols-1 flex-col items-center
+        justify-center justify-items-center gap-8 gap-x-6 gap-y-4 overflow-hidden py-16 text-center sm:grid sm:grid-cols-2
+        sm:gap-y-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-2"
 	>
 		{#if animating}
 			{#each projects as project, i}

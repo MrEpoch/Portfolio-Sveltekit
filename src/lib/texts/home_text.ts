@@ -1,4 +1,3 @@
-
 export const paragraph_text = `
 Developer with experience in website creation, with technologies like nextjs, sveltekit, tailwindcss, animations and more. All with intent of creating high quality websites.
     `;

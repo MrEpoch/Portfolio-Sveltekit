@@ -6,12 +6,12 @@
 </script>
 
 <section
-	class="min-h-screen flex flex-col items-center py-[10rem] relative z-[0] px-4 mx-auto max-w-screen-xl"
+	class="relative z-[0] mx-auto flex min-h-screen max-w-screen-xl flex-col items-center px-4 py-[10rem]"
 >
-	<h1 class="text-center sm:text-6xl text-4xl mt-[7rem] font-bold text-gray-900 dark:text-white">
+	<h1 class="mt-[7rem] text-center text-4xl font-bold text-gray-900 dark:text-white sm:text-6xl">
 		Contact Me
 	</h1>
-	<div class="flex w-full flex-wrap gap-[3rem] mt-[8rem] items-center justify-around">
+	<div class="mt-[8rem] flex w-full flex-wrap items-center justify-around gap-[3rem]">
 		{#each contact_info as i}
 			<ContactCard {i} {addedToClipBoard} />
 		{/each}

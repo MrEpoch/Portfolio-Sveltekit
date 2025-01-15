@@ -3,8 +3,8 @@
 	import Footer from './footer.svelte';
 	import Header from './header.svelte';
 	import Transition from 'components/transition.svelte';
-  import "@fontsource/jetbrains-mono";
-  import '@fontsource/poppins';
+	import '@fontsource/jetbrains-mono';
+	import '@fontsource/poppins';
 
 	export let data;
 </script>
@@ -18,18 +18,18 @@
 	/>
 </svelte:head>
 
-<div class="dark layout bg-main-background-100">
+<div class="layout dark bg-main-background-100">
 	<Header />
 	<Transition url={data.url}>
-    <main class="bg-main-background-200 min-h-screen w-full">
-      <slot />
-    </main>
+		<main class="min-h-screen w-full bg-main-background-200">
+			<slot />
+		</main>
 	</Transition>
 	<Footer />
 </div>
 
 <style>
-  .layout {
-    font-family: 'JetBrains Mono', monospace;
-  }
+	.layout {
+		font-family: 'JetBrains Mono', monospace;
+	}
 </style>

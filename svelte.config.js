@@ -26,6 +26,13 @@ const config = {
 			assets: './src/assets',
 			types: './src/types',
 			images: './src/images'
+		},
+		csp: {
+			directives: {
+				'default-src': ['self'],
+				'script-src': ['self'],
+				'style-src': ['self', 'unsafe-inline', 'kit.svelte.dev']
+			}
 		}
 	}
 };

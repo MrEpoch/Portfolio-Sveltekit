@@ -27,11 +27,11 @@
 </script>
 
 <div
-	class="max-w-container py-16 pt-48 justify-center overflow-hidden items-center text-center flex flex-col gap-[2rem]"
+	class="max-w-container flex flex-col items-center justify-center gap-[2rem] overflow-hidden py-16 pt-48 text-center"
 >
 	<h1
-		class="lines mb-4 textfont-extrabold tracking-tight leading-none text-gray-900
-        md:text-5xl text-3xl max-[420px]:text-2xl lg:text-6xl dark:text-white"
+		class="lines textfont-extrabold mb-4 text-3xl leading-none tracking-tight
+        text-gray-900 dark:text-white max-[420px]:text-2xl md:text-5xl lg:text-6xl"
 	>
 		{#if animate}
 			{#each text as t, i}
@@ -39,7 +39,7 @@
 					{#if t.color}
 						<span
 							in:fly|global={{ y: 100, delay: 300 * i, easing: backOut }}
-							class="line bg-gradient-to-r from-main-100 to-main-300 bg-clip-text text-transparent box-decoration-clone"
+							class="line bg-gradient-to-r from-main-100 to-main-300 box-decoration-clone bg-clip-text text-transparent"
 							>&nbsp;{t.content}</span
 						>
 					{:else}
@@ -50,26 +50,26 @@
 				</div>
 			{/each}
 		{:else}
-			<span class="lg:pt-[4.5rem] md:pt-[3.75rem] pt-[2.6rem] max-[420px]:pt-[2.2rem]" />
+			<span class="pt-[2.6rem] max-[420px]:pt-[2.2rem] md:pt-[3.75rem] lg:pt-[4.5rem]" />
 		{/if}
 	</h1>
 	<p
-		class="mb-8 text-sm sm:text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400"
+		class="mb-8 text-sm font-normal text-gray-500 dark:text-gray-400 sm:px-16 sm:text-lg lg:px-48 lg:text-xl"
 	>
 		{paragraph_text}
 	</p>
 	<div
-		class="flex flex-col pb-[40rem] space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+		class="flex flex-col space-y-4 pb-[40rem] sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0"
 	>
 		<a
 			href="/projects"
-			class="inline-flex border-4 border-main-background-200 transition hover:border-black justify-center items-center py-3 px-5 text-base font-medium
-                                  text-center text-main-text-200 rounded-lg  focus:ring-4
-                                  bg-gradient-to-r from-main-300 to-main-200"
+			class="inline-flex items-center justify-center rounded-lg border-4 border-main-background-200 bg-gradient-to-r from-main-300 to-main-200 px-5 py-3
+                                  text-center text-base font-medium text-main-text-200
+                                  transition hover:border-black focus:ring-4"
 		>
 			See Projects
 			<svg
-				class="w-3.5 h-3.5 ml-2"
+				class="ml-2 h-3.5 w-3.5"
 				aria-hidden="true"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"

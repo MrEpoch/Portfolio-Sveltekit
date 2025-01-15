@@ -13,42 +13,42 @@
 </script>
 
 <div class="max-w-container w-full py-16 text-white">
-	<div class="h-full w-full flex flex-col gap-[2rem]">
+	<div class="flex h-full w-full flex-col gap-[2rem]">
 		<a
 			href={project.link}
-			class="w-full dark:bg-gray-800 bg-gray-200 rounded-3xl
-            min-h-[200px] sm:min-h-[500px] flex justify-center object-cover h-full"
+			class="flex h-full min-h-[200px] w-full
+            justify-center rounded-3xl bg-gray-200 object-cover dark:bg-gray-800 sm:min-h-[500px]"
 		>
-				<img
-					use:lazyLoad={project.img}
-					class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
-					alt={project.name}
-				/>
+			<img
+				use:lazyLoad={project.img}
+				class="rounded-3xl object-cover opacity-0 dark:brightness-[85%]"
+				alt={project.name}
+			/>
 		</a>
 		<a href={project.link}>
 			<h2
-				class="mt-4 text-2xl sm:text-4xl tracking-wide hover:underline font-anton text-gray-900 dark:text-white"
+				class="font-anton mt-4 text-2xl tracking-wide text-gray-900 hover:underline dark:text-white sm:text-4xl"
 			>
 				{project.name}
 			</h2>
 		</a>
-		<hr class="long-line bg-gradient-to-r from-main-200 to-main-300 h-1 w-full" />
+		<hr class="long-line h-1 w-full bg-gradient-to-r from-main-200 to-main-300" />
 		<div class="w-full">
-			<div class="flex gap-2 justify-between">
-				<h3 class="font-bold sm:text-lg text-sm">Technologies:</h3>
-				<p class="sm:text-lg text-sm">{project.technologies}</p>
+			<div class="flex justify-between gap-2">
+				<h3 class="text-sm font-bold sm:text-lg">Technologies:</h3>
+				<p class="text-sm sm:text-lg">{project.technologies}</p>
 			</div>
-			<div class="flex gap-2 justify-between">
-				<h3 class="font-bold sm:text-lg text-sm">Created:</h3>
-				<p class="sm:text-lg text-sm">{project.created}</p>
+			<div class="flex justify-between gap-2">
+				<h3 class="text-sm font-bold sm:text-lg">Created:</h3>
+				<p class="text-sm sm:text-lg">{project.created}</p>
 			</div>
-			<div class="flex gap-2 justify-between">
-				<h3 class="font-bold sm:text-lg text-sm">Github Url:</h3>
-				<a href={project.githubUrl} class="sm:text-lg text-sm hover:underline">{project.name}</a>
+			<div class="flex justify-between gap-2">
+				<h3 class="text-sm font-bold sm:text-lg">Github Url:</h3>
+				<a href={project.githubUrl} class="text-sm hover:underline sm:text-lg">{project.name}</a>
 			</div>
 		</div>
 		<div class="w-full">
-			<h3 class="mt-4 text-2xl tracking-wide font-anton text-gray-900 dark:text-white">
+			<h3 class="font-anton mt-4 text-2xl tracking-wide text-gray-900 dark:text-white">
 				Description
 			</h3>
 			<p class="mt-4 text-lg text-gray-900 dark:text-white">{project.description}</p>
