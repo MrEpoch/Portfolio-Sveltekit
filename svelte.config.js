@@ -27,19 +27,6 @@ const config = {
 			types: './src/types',
 			images: './src/images'
 		},
-    csp: {
-      mode: 'auto',
-			directives: {
-				'default-src': ['self'],
-				'script-src': ['self'],
-				'style-src': ['self', 'unsafe-inline'],
-        'font-src': ['self', 'data:'],
-			},
-      reportOnly: {
-				'script-src': ['self'],
-				'report-uri': ['/']
-			}
-		}
 	}
 };
 
