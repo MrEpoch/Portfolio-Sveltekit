@@ -12,7 +12,13 @@
 
 	const form = superForm(data, {
 		onSubmit: async ({ formData, cancel }) => {
-			console.log(formData);
+			console.log(hcaptcha);
+      hcaptcha.render("hcaptcha", {
+        sitekey: PUBLIC_HCAPTCHA_SITEKEY,
+        theme: "dark",
+        size: "invisible",
+      });
+      hcaptcha.execute("hcaptcha");
 			return async () => {};
 		},
 		validators: zodClient(formSchema)
@@ -72,7 +78,6 @@
 	</Form.Field>
 
 	<Form.Button class="w-full bg-main-200 hover:bg-main-300">Send message</Form.Button>
-	{#if isLoadedHCaptcha}
 		<div
 			id="hcaptcha"
 			data-sitekey={PUBLIC_HCAPTCHA_SITEKEY ?? ''}
@@ -83,5 +88,4 @@
 			data-theme="dark"
 			data-error-callback="onError"
 		></div>
-	{/if}
 </form>

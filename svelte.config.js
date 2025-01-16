@@ -31,12 +31,17 @@ const config = {
       mode: 'auto',
 			directives: {
 				'default-src': ['self'],
-				'script-src': ['self'],
-				'style-src': ['self', 'unsafe-inline'],
+        'script-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+        'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
+        'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+        'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
         'font-src': ['self', 'data:'],
 			},
       reportOnly: {
-				'script-src': ['self'],
+        'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
+        'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+        'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+        'script-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
 				'report-uri': ['/']
 			}
 		}
