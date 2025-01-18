@@ -35,12 +35,8 @@
 </script>
 
 <svelte:head>
-	<script src="https://js.hcaptcha.com/1/api.js?onload=onLoad" async defer></script>
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </svelte:head>
-
-{#if form?.errors}
-  {form?.errors}
-{/if}
 
 <form
 	class="flex w-full max-w-lg flex-col gap-8 rounded-md bg-main-background-300 p-10 text-white"
