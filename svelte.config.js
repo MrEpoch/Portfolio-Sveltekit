@@ -14,6 +14,7 @@ const config = {
 	// for more information about preprocessors
 	extensions: ['.svelte', '.mdx'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+  register: false,
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
