@@ -3,14 +3,12 @@ let intersectionObserver;
 function ensureIntersectionObserver() {
 	if (intersectionObserver) return;
 
-  intersectionObserver = new IntersectionObserver(
-		(entries) => {
-			entries.forEach(entry => {
-				const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
-				entry.target.dispatchEvent(new CustomEvent(eventName));
-			});
-		}
-	);
+	intersectionObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			const eventName = entry.isIntersecting ? 'enterViewport' : 'exitViewport';
+			entry.target.dispatchEvent(new CustomEvent(eventName));
+		});
+	});
 }
 
 export default function viewport(element) {
@@ -22,5 +20,5 @@ export default function viewport(element) {
 		destroy() {
 			intersectionObserver.unobserve(element);
 		}
-	}
+	};
 }

@@ -24,6 +24,6 @@
 		and more which takes my websites to the next level, in terms of professionalism.
 	</p>
 	<div class="flex w-full items-center justify-center py-16">
-		<img src={WebPages} class="h-96 w-fit" />
+		<img alt="Image of web pages" src={WebPages} class="h-96 w-fit" />
 	</div>
 </div>

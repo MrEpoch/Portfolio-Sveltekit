@@ -27,21 +27,26 @@ const config = {
 			types: './src/types',
 			images: './src/images'
 		},
-    csp: {
-      mode: 'auto',
+		csp: {
+			mode: 'auto',
 			directives: {
 				'default-src': ['self'],
-        'script-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com', 'https://js.hcaptcha.com'],
-        'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
-        'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
-        'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
-        'font-src': ['self', 'data:'],
+				'script-src': [
+					'self',
+					'https://hcaptcha.com',
+					'https://*.hcaptcha.com',
+					'https://js.hcaptcha.com'
+				],
+				'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
+				'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+				'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+				'font-src': ['self', 'data:']
 			},
-      reportOnly: {
-        'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
-        'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
-        'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
-        'script-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+			reportOnly: {
+				'style-src': ['self', 'unsafe-inline', 'https://*.hcaptcha.com', 'https://hcaptcha.com'],
+				'connect-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+				'frame-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
+				'script-src': ['self', 'https://hcaptcha.com', 'https://*.hcaptcha.com'],
 				'report-uri': ['/']
 			}
 		}

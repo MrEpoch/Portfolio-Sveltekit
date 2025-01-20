@@ -11,18 +11,18 @@
 	export let data: SuperValidated<Infer<FormSchema>>;
 
 	const form = superForm(data, {
-    dataType: 'json',
+		dataType: 'json',
 		onSubmit: async ({ cancel, formData, jsonData }) => {
-      const widgetId = await hcaptcha.render("hcaptcha-container", {
-        sitekey: PUBLIC_HCAPTCHA_SITEKEY,
-        theme: 'dark',
-        size: 'invisible',
-      });
-      const success_code = await hcaptcha.execute(widgetId, { async: true });
+			const widgetId = await hcaptcha.render('hcaptcha-container', {
+				sitekey: PUBLIC_HCAPTCHA_SITEKEY,
+				theme: 'dark',
+				size: 'invisible'
+			});
+			const success_code = await hcaptcha.execute(widgetId, { async: true });
 
-      const customFormData = Object.fromEntries(formData)
-      customFormData['h-captcha-response'] = success_code.response;
-      jsonData(customFormData);
+			const customFormData = Object.fromEntries(formData);
+			customFormData['h-captcha-response'] = success_code.response;
+			jsonData(customFormData);
 		},
 		validators: zodClient(formSchema)
 	});
@@ -68,29 +68,39 @@
 		<Form.Control let:attrs>
 			<div class="flex items-center justify-start gap-4">
 				<Form.Label>
-          Agree with
-					<a class="underline hover:text-yellow-300" href="https://www.privacypolicies.com/live/2470fb14-022a-4f19-a2e0-2893fa1693fd">
+					Agree with
+					<a
+						class="underline hover:text-yellow-300"
+						href="https://www.privacypolicies.com/live/2470fb14-022a-4f19-a2e0-2893fa1693fd"
+					>
 						Privacy Policy</a
 					></Form.Label
 				>
-        <Checkbox {...attrs} bind:checked={$formData.privacyPolicy} />
+				<Checkbox {...attrs} bind:checked={$formData.privacyPolicy} />
 			</div>
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Field {form} name="privacyPolicy">
 		<Form.Control let:attrs>
-			<div class="text-sm items-center justify-start gap-4">
-        This site is protected by <a class="underline hover:text-yellow-300" href="https://www.hCaptcha.com">hCaptcha</a> and its
-<a class="underline hover:text-yellow-300" href="https://www.hcaptcha.com/privacy">Privacy Policy</a> and
-<a class="underline hover:text-yellow-300" href="https://www.hcaptcha.com/terms">Terms of Service</a> apply.
+			<div class="items-center justify-start gap-4 text-sm">
+				This site is protected by <a
+					class="underline hover:text-yellow-300"
+					href="https://www.hCaptcha.com">hCaptcha</a
+				>
+				and its
+				<a class="underline hover:text-yellow-300" href="https://www.hcaptcha.com/privacy"
+					>Privacy Policy</a
+				>
+				and
+				<a class="underline hover:text-yellow-300" href="https://www.hcaptcha.com/terms"
+					>Terms of Service</a
+				> apply.
 			</div>
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
 
 	<Form.Button class="w-full bg-main-200 hover:bg-main-300">Send message</Form.Button>
-		<div
-			id="hcaptcha-container"
-		></div>
+	<div id="hcaptcha-container"></div>
 </form>

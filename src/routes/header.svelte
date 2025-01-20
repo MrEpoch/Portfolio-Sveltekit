@@ -5,7 +5,7 @@
 	let hidden = true;
 </script>
 
-<nav class="dark:bg-main-background-200 text-white">
+<nav class="text-white dark:bg-main-background-200">
 	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-4">
 		<a href="/" class="flex items-center">
 			<div class="mr-3 h-16 w-16">
@@ -86,6 +86,6 @@
 	}
 
 	.hoverHeader {
-		@apply block rounded py-2 pl-3 pr-4 hover:bg-gray-100 text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-main-200 md:dark:hover:bg-transparent md:dark:hover:text-main-300;
+		@apply block rounded py-2 pl-3 pr-4 text-white hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-main-200 md:dark:hover:bg-transparent md:dark:hover:text-main-300;
 	}
 </style>
