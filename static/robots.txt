@@ -1,0 +1,8 @@
+# https://stencukpage.com
+User-agent: *
+
+Disallow: /*.js$
+Disallow: /*.png$
+Disallow: /*.webp$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
