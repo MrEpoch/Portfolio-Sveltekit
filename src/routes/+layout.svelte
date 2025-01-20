@@ -10,11 +10,11 @@
 </script>
 
 <svelte:head>
-	<title>Dev Portfolio</title>
+	<title>Developer Portfolio</title>
 	<meta name="color-scheme" content={'dark'} />
 	<meta
 		name="description"
-		content="Alexandr Stenčuk, Frontend Developer, experienced in SvelteKit and Next.js"
+		content="Alexandr Stenčuk, Web Developer, experienced in SvelteKit and Next.js, with a passion for creating beautiful, functional websites."
 	/>
 </svelte:head>
 
